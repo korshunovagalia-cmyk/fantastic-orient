@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fantastic Orient — обзорные экскурсии</title>
+<meta name="description" content="Обзорные экскурсии Fantastic Orient по Дубаю и Абу-Даби. Трансфер из отеля, опытные гиды, лучшие цены.">
+<link rel="alternate" hreflang="en" href="../index.html">
+<link rel="alternate" hreflang="ru" href="../ru/index.html">
+<link rel="icon" href="../assets/fo-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=56be96a1">
+</head>
+<body data-root="../">
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="../ru/index.html" aria-label="Fantastic Orient — на главную"><img src="../assets/logo.png" alt="Fantastic Orient"></a>
+    <ul class="nav-links">
+      <li><a href="../ru/index.html#tours">Экскурсии</a></li>
+      <li><a href="../ru/index.html#why">Почему мы</a></li>
+      <li><a href="#book">Бронирование</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Язык"><a href="../index.html" hreflang="en" lang="en">EN</a><a href="../ru/index.html" hreflang="ru" lang="ru" class="on" aria-current="true">RU</a></div>
+      <a class="nav-cta" href="#book">Забронировать</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap reveal">
+    <h1>Фантастические туры, фантастическое путешествие.</h1>
+    <p class="sub">Обзорные экскурсии по Дубаю и Абу-Даби.</p>
+    <div class="btn-row">
+      <a class="btn" href="#book">Забронировать</a>
+      <a class="link-more" href="#tours">Все экскурсии</a>
+    </div>
+  </div>
+  <div class="hero-media reveal">
+    <img src="../assets/tours/dubai-city-tour.jpg" alt="Небоскрёбы Дубая на закате с видом через залив">
+  </div>
+</header>
+
+<section class="tours" id="tours">
+  <div class="section-head wrap reveal">
+    <h2>Обзорные экскурсии.</h2>
+    <p>Четыре способа увидеть Эмираты.</p>
+  </div>
+  <div class="grid" data-cards></div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Почему мы.</h2>
+      <p>Мы берём на себя все детали. Вы наслаждаетесь городом.</p>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 13l2-6h14l2 6v5h-2.5M3 13v5h2.5M3 13h18"/><circle cx="7.5" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg></div>
+        <h4>Трансфер из отеля</h4>
+        <p>Трансфер от двери до двери из отелей в центре Дубая.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+        <h4>Опытные гиды</h4>
+        <p>Местные гиды, которые знают историю каждого здания.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div>
+        <h4>Честные цены</h4>
+        <p>Понятные цены, трансфер уже включён.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Бронирование.</h2>
+      <p>Забронируйте место меньше чем за минуту.</p>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <div class="field full">
+        <label for="tour">Экскурсия</label>
+        <select id="tour" name="tour" required></select>
+      </div>
+      <div class="field">
+        <label for="date">Дата</label>
+        <input id="date" name="date" type="date" required>
+      </div>
+      <div class="field">
+        <label for="guests">Гости</label>
+        <select id="guests" name="guests"></select>
+      </div>
+      <div class="field">
+        <label for="name">Имя и фамилия</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="total"><span>Итого</span><b id="total"></b></div>
+      <button class="btn" type="submit">Забронировать</button>
+      <div class="success" role="status">
+        <h3>Бронирование принято.</h3>
+        <p id="success-msg">Скоро мы пришлём подтверждение на вашу почту.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="../assets/logo.png" alt="Fantastic Orient">
+      <div>© 2026 Fantastic Orient. Все права защищены.</div>
+    </div>
+    <div>Дубай · Абу-Даби · Объединённые Арабские Эмираты</div>
+  </div>
+</footer>
+
+<script src="../tours.js?v=4f015302"></script>
+</body>
+</html>
